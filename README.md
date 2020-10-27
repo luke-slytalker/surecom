@@ -1,4 +1,4 @@
-# surecom
+# S.U.R.E.C.O.M.
 Super Ultra Reliable Exfiltration &amp; Communications Obfuscator Machine
 (results may vary)
 
