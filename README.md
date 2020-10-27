@@ -15,8 +15,3 @@ EXTARCTION USEAGE:  extract.py -i IMAGE -p PASSWORD -o OFFSET
 
 
 Twitter:  @_Luke_Slytalker
-
-Gab:  @LukeSlytalker
-
-Parler:  @LukeSlytalker
-
