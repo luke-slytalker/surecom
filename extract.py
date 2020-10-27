@@ -3,6 +3,7 @@
 #       IMAGE:  image to (try and) extract data from
 #       PASSWORD:   password to lock/unlock
 #       OFFSET:     embedding offset
+#   Example:    extract.py -i stegocat.png -p PASSWORD123
 
 from stegano import lsb
 from base64 import b64encode, b64decode

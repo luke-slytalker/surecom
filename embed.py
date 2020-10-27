@@ -5,6 +5,7 @@
 #       PASSWORD:   password to lock/unlock
 #       SAVE_AS:    name to save steg'ed file as
 #       OFFSET:     embedding offset (for further obfuscation)
+#   Example:    embed.py -i cat.jpg -d "call me at 10:10" -p PASSWORD123 -s stegocat.png
 
 from base64 import b64encode, b64decode
 from Crypto.Cipher import AES
