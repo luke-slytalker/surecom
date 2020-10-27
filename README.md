@@ -7,10 +7,10 @@ Encrypt, encode, and embed data into any* JPG or PNG of your choice using a comb
 Data is encrypted and obfuscated then embedded into the Least Significant Bits of the cover image, producing a visually identical image saved in PNG format.
 
 # EMBED
-EMBEDDING USAGE:  embed.py -i IMAGE -d "data to embed" -p PASSWORD -s SAVED_AS -o OFFSET
+USAGE:  embed.py -i IMAGE -d "data to embed" -p PASSWORD -s SAVED_AS -o OFFSET
 
 # EXTARCT
-EXTARCTION USEAGE:  extract.py -i IMAGE -p PASSWORD -o OFFSET
+USEAGE:  extract.py -i IMAGE -p PASSWORD -o OFFSET
 
 
 
