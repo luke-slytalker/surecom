@@ -42,15 +42,15 @@ def extract(img, password, offset):
 
     x = unlukefuscate(y)
 
-    s1 = x[:24]         # salt (first 24)
-    s2 = x[24:48]       # Initialization Vector (next 24)
-    s3 = x[48:]         # Cipher Text / encrypted message (rest of message)
+    s1 = x[:44]         # salt (first 44)
+    s2 = x[44:68]       # Initialization Vector (next 24)
+    s3 = x[68:]         # Cipher Text / encrypted message (rest of message)
 
     salt = b64decode(s1)  # base64 decoded salt
     iv = b64decode(s2)  # base64 decoded init vector
     ct = b64decode(s3)  # base64 decoded cipher text
 
-    key = PBKDF2(password, salt, dkLen=16)  # Your key that you can encrypt with
+    key = PBKDF2(password, salt, dkLen=32)  # Your key that you can encrypt with
 
     try:
         cipher = AES.new(key, AES.MODE_CBC, iv)

@@ -43,8 +43,8 @@ saveas = comms.steg         # what to save the steg'ed image as
 
 def embed(img, saveas, password, inp, offset):
     # encrypt & embed a data string into an image
-    salt = get_random_bytes(16)             # generate something salty..
-    key = PBKDF2(password, salt, dkLen=16)  # encryption key generated from the password
+    salt = get_random_bytes(32)             # generate something salty..
+    key = PBKDF2(password, salt, dkLen=32)  # encryption key generated from the password
 
     cipher = AES.new(key, AES.MODE_CBC)                     # let's get encrypting...
     data = inp.encode()                                     # encode input to a bytes object
