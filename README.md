@@ -12,6 +12,6 @@ USAGE:  embed.py -i IMAGE -d "data to embed" -p PASSWORD -s SAVED_AS -o OFFSET
 # EXTARCT
 USEAGE:  extract.py -i IMAGE -p PASSWORD -o OFFSET
 
-
+![Image of SURECOM](https://github.com/luke-slytalker/surecom/blob/main/steg-send.PNG)
 
 Twitter:  @_Luke_Slytalker
